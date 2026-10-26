@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FF6B1A">
+<meta name="description" content="PriditorTypeshit (PTS) is a server tool you can use before hosting a server.">
+<title>PriditorTypeshit</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Unbounded:wght@500;700;900&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"></div>
+
+<nav class="topbar" id="topbar" aria-label="Main">
+  <a class="brand" href="#top"><span class="led" aria-hidden="true"></span>PTS</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#top">Home</a></li>
+    <li><a href="#product" data-login-to="#product">Product</a></li>
+    <li><a href="#About">About PTS</a></li>
+    <li><a href="#How">How to use</a></li>
+    <li><a href="#Contact">Contact us</a></li>
+    <li><a href="#Team">Team</a></li>
+    <li data-auth hidden><a href="#download">Download</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="nav-user" id="navUser" hidden></a>
+    <button class="btn-small" type="button" id="navLogin">Log in</button>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="site">
+
+<!-- ===================== HOME ===================== -->
+<div class="view" id="view-home">
+
+  <header class="hero" id="top">
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span data-welcome>Welcome user</span></p>
+    <h1 class="wordmark" aria-label="PriditorTypeshit!!">
+      <span class="line">Priditor</span>
+      <span class="line accent">Typeshit<span class="bang" aria-hidden="true">!!</span></span>
+    </h1>
+    <p class="tagline">A server tool you can use before hosting a server.</p>
+    <div class="cta">
+      <a class="btn-primary" href="#product" data-login-to="#product">Start <span aria-hidden="true">→</span></a>
+      <a class="btn-ghost" href="#How">How to use</a>
+    </div>
+
+    <div class="hero-foot">
+      <p>Made by <strong>Zetaloimak</strong></p>
+      <p class="scroll-hint">Scroll</p>
+    </div>
+  </header>
+
+  <section class="block products" id="Products">
+    <div class="head reveal">
+      <span class="kicker">Our products</span>
+      <h2>PTS Servers</h2>
+      <p class="lead">Two plans for your PriditorTypeshit projects. Pick the storage you need.</p>
+    </div>
+
+    <div class="pp-grid">
+      <article class="tile pp-card reveal">
+        <span class="dl-badge">Plan 1/2</span>
+        <h3>PTS Server 1</h3>
+        <div class="plan-storage"><b>1</b><span>GB</span></div>
+        <p class="pp-desc">A starter server with the admin function and server verify.</p>
+        <a class="pp-link" href="#product" data-login-to="#product">View plan <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="tile pp-card reveal" style="--d:.1s">
+        <span class="dl-badge">Plan 2/2</span>
+        <h3>PTS Server 2</h3>
+        <div class="plan-storage"><b>100</b><span>GB</span></div>
+        <p class="pp-desc">Room for many users, logs, and backups, with full admin tools.</p>
+        <a class="pp-link" href="#product" data-login-to="#product">View plan <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+
+    <div class="pp-more reveal">
+      <a class="btn-primary" href="#product" data-login-to="#product">See more <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-run">
+      <div class="ticker-group">
+        <span>Before you host a server</span><span>PriditorTypeshit</span><span>Made by Zetaloimak</span><span>Game Studio.H</span>
+      </div>
+      <div class="ticker-group">
+        <span>Before you host a server</span><span>PriditorTypeshit</span><span>Made by Zetaloimak</span><span>Game Studio.H</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="block" id="About">
+    <div class="head reveal">
+      <span class="kicker">01 — About</span>
+      <h2>About PTS</h2>
+      <p class="lead">PriditorTypeshit (PTS) is a server tool that users can use before hosting a server.</p>
+    </div>
+    <div class="bento">
+      <article class="tile big reveal">
+        <p>Created by <strong>Zetaloimak</strong>, also known as Kasidit Rakphan, under <strong>Game Studio.H</strong>.</p>
+        <p>The project was created on 28/03/2026 using C, and later upgraded to Python in version 1.5.</p>
+      </article>
+      <article class="tile stat reveal" style="--d:.1s"><span>Started</span><b>28/03/2026</b></article>
+      <article class="tile stat reveal" style="--d:.2s"><span>First written in</span><b>C</b></article>
+      <article class="tile stat reveal" style="--d:.3s"><span>Upgraded to Python in</span><b>v1.5</b></article>
+    </div>
+  </section>
+
+  <section class="block" id="How">
+    <div class="head reveal">
+      <span class="kicker">02 — Guide</span>
+      <h2>How to Use</h2>
+    </div>
+    <div class="track reveal" aria-hidden="true"><span class="fill"></span></div>
+    <ol class="steps">
+      <li class="step reveal" style="--d:.05s"><span class="num">1</span><p>Open the webpage.</p></li>
+      <li class="step reveal" style="--d:.15s"><span class="num">2</span><p>Enter the code shown on the webpage.</p></li>
+      <li class="step reveal" style="--d:.25s"><span class="num">3</span><p>Copy the code.</p></li>
+      <li class="step reveal" style="--d:.35s"><span class="num">4</span><p>Open our program and enter the code.</p></li>
+      <li class="step reveal" style="--d:.45s"><span class="num">5</span><p>Select the information and try out.</p></li>
+    </ol>
+  </section>
+
+  <section class="block" id="Contact">
+    <div class="head reveal">
+      <span class="kicker">03 — Contact</span>
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact">
+      <div class="tile phone-tile reveal">
+        <p class="label">PriditorTypeshit Service</p>
+        <p class="phone">0638055598</p>
+        <button class="copy" type="button" data-copy="0638055598">Copy number</button>
+      </div>
+      <p class="or">or</p>
+      <a class="tile web-tile reveal" href="contact.html" style="--d:.1s">
+        <small>Web</small>
+        <strong>Click this link</strong>
+      </a>
+    </div>
+  </section>
+
+  <section class="block" id="Team">
+    <div class="head reveal">
+      <span class="kicker">04 — Team</span>
+      <h2>Support By</h2>
+    </div>
+    <div class="team">
+      <div class="tile member reveal">
+        <span class="mono" aria-hidden="true">KR</span>
+        <div><strong>Kasidit Rakphan</strong><small class="role">Programmer</small></div>
+      </div>
+      <div class="tile member reveal" style="--d:.1s">
+        <span class="mono" aria-hidden="true">SL</span>
+        <div><strong>Siripreeya Limpornsemanon</strong><small class="role">Programmer Partner</small></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===================== PRODUCT ===================== -->
+<div class="view" id="view-product" hidden>
+
+  <header class="hero compact">
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Our product</span></p>
+    <h1 class="wordmark sm" aria-label="PTS Server">
+      <span class="line">PTS</span>
+      <span class="line accent">Server</span>
+    </h1>
+    <p class="tagline">A server for your PriditorTypeshit program. Choose the plan that fits how much storage you need.</p>
+  </header>
+
+  <div class="block tight">
+    <div class="plan-grid">
+
+      <article class="tile plan reveal">
+        <span class="dl-badge">Plan 1/2</span>
+        <h2>PTS Server 1</h2>
+        <div class="plan-storage"><b>1</b><span>GB</span></div>
+        <p class="plan-desc">A starter server for small projects, with admin tools and server verify included.</p>
+        <ul class="plan-list">
+          <li><strong>Admin function:</strong> view the user accounts on your server</li>
+          <li><strong>Server verify:</strong> check access codes from your program</li>
+          <li>Sign-up protected by reCAPTCHA</li>
+          <li>Passwords stored as secure hashes</li>
+          <li>Download page for PTS ver 1 and ver 2</li>
+        </ul>
+        <a class="btn-primary plan-btn" href="#Contact">Order Plan 1 <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="tile plan plan-large reveal" style="--d:.1s">
+        <span class="dl-badge">Plan 2/2</span>
+        <h2>PTS Server 2</h2>
+        <div class="plan-storage"><b>100</b><span>GB</span></div>
+        <p class="plan-desc">Everything in Plan 1, plus full admin tools and plenty of room for logs and backups.</p>
+        <ul class="plan-list">
+          <li>Everything in PTS Server 1</li>
+          <li><strong>Full admin function:</strong> reset passwords, disable accounts, and review sign-ups</li>
+          <li><strong>Server verify:</strong> room for many users and many checks</li>
+          <li>Room for logs and backups</li>
+          <li>Support from our team</li>
+        </ul>
+        <a class="btn-primary plan-btn" href="#Contact">Order Plan 2 <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </div>
+
+  <section class="block" id="Functions">
+    <div class="head reveal">
+      <span class="kicker">What's inside</span>
+      <h2>Functions</h2>
+      <p class="lead">Both plans run on the same core. Here is what each part does for you.</p>
+    </div>
+
+    <div class="func-grid">
+      <article class="tile func reveal">
+        <h3>Admin function</h3>
+        <p>See every account that has signed up and when it was created, and manage them from one place.</p>
+      </article>
+      <article class="tile func reveal" style="--d:.1s">
+        <h3>Server verify</h3>
+        <p>Your program sends a code to the server. The server checks it and replies with valid or invalid, plus the owner's username.</p>
+      </article>
+      <article class="tile func reveal" style="--d:.2s">
+        <h3>Secure accounts</h3>
+        <p>Passwords are stored as hashes, never as plain text, and new accounts must pass a reCAPTCHA check.</p>
+      </article>
+      <article class="tile func reveal" style="--d:.3s">
+        <h3>Own database</h3>
+        <p>All user data is kept in a database on your server, so it is simple to back up and move.</p>
+      </article>
+      <article class="tile func reveal" style="--d:.4s">
+        <h3>Download hub</h3>
+        <p>Logged-in users open the download page and get PTS ver 1 (C) and PTS ver 2 (Python) from GitHub.</p>
+      </article>
+      <article class="tile func reveal" style="--d:.5s">
+        <h3>And more</h3>
+        <p>New functions are added over time. Ask us about custom features for your server.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block tight">
+    <a class="tile web-tile reveal" href="#Contact">
+      <small>Not sure yet?</small>
+      <strong>Contact us to choose a plan</strong>
+    </a>
+  </section>
+
+</div>
+
+<!-- ===================== DOWNLOAD ===================== -->
+<div class="view" id="view-download" hidden>
+
+  <header class="hero compact">
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span data-welcome>Welcome user</span></p>
+    <h1 class="wordmark sm" aria-label="PriditorTypeshit 2">
+      <span class="line">Priditor</span>
+      <span class="line accent">Typeshit 2</span>
+    </h1>
+    <p class="tagline">Choose a version below. Each option opens its project on GitHub.</p>
+  </header>
+
+  <div class="block tight">
+
+    <div class="tile lock-card reveal" id="dlLocked" hidden>
+      <span class="lock-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      </span>
+      <h2>Log in to download</h2>
+      <p>Downloads are available to logged-in users only.</p>
+      <a class="btn-primary" href="#download" data-login-to="#download">Log in <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div id="dlContent" hidden>
+      <div class="dl-grid">
+        <!-- Replace YOUR-USERNAME/YOUR-REPO with your GitHub repository -->
+        <a class="tile dl-card reveal" href="https://github.com/YOUR-USERNAME/YOUR-REPO/tree/main/ver1-c" target="_blank" rel="noopener">
+          <span class="dl-badge">Version 1</span>
+          <h2>PriditorTypeshit ver 1</h2>
+          <p class="dl-lang">C ver</p>
+          <p class="dl-desc">Source and download for the C version.</p>
+          <span class="dl-go">Continue on GitHub <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="tile dl-card reveal" style="--d:.1s" href="https://github.com/YOUR-USERNAME/YOUR-REPO/tree/main/ver2-python" target="_blank" rel="noopener">
+          <span class="dl-badge">Version 2</span>
+          <h2>PriditorTypeshit ver 2</h2>
+          <p class="dl-lang">Python ver</p>
+          <p class="dl-desc">Source and download for the Python version.</p>
+          <span class="dl-go">Continue on GitHub <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+      <p class="dl-note">Each version opens in a new tab on GitHub.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ===================== ADMIN ===================== -->
+<div class="view" id="view-admin" hidden>
+
+  <header class="hero compact">
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+
+    <p class="eyebrow"><span class="dot admin-dot" aria-hidden="true"></span><span>Admin mode</span></p>
+    <h1 class="wordmark sm" aria-label="Admin panel">
+      <span class="line">Admin</span>
+      <span class="line accent">Panel</span>
+    </h1>
+    <p class="tagline">Only admin accounts can see this page.</p>
+  </header>
+
+  <div class="block tight">
+
+    <div class="tile lock-card reveal" id="adminLocked" hidden>
+      <span class="lock-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      </span>
+      <h2>Admin only</h2>
+      <p>Log in with an admin account to see this page.</p>
+      <a class="btn-primary" href="#top">Back to home</a>
+    </div>
+
+    <div id="adminContent" hidden>
+      <div class="admin-stats">
+        <div class="tile admin-stat reveal"><span>Total users</span><b id="statTotal">0</b></div>
+        <div class="tile admin-stat reveal" style="--d:.1s"><span>Admin accounts</span><b id="statAdmins">0</b></div>
+        <div class="tile admin-stat reveal" style="--d:.2s"><span>Newest user</span><b id="statNewest">—</b></div>
+      </div>
+
+      <div class="admin-table-wrap reveal">
+        <table class="admin-table">
+          <thead>
+            <tr><th>#</th><th>Username</th><th>Role</th><th>Joined</th></tr>
+          </thead>
+          <tbody id="userRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  <p>© <span data-year>2026</span> <strong>PriditorTypeshit</strong> — Made by Kasidit Rakphan</p>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<!-- ===================== LOG IN / SIGN IN POPUP ===================== -->
+<div class="auth" id="auth" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <button class="auth-back" type="button" id="authClose">← Back to site</button>
+  <div class="auth-card">
+    <p class="auth-brand" id="authTitle">Priditor<span>Typeshit</span></p>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" type="button" role="tab" aria-selected="true" data-mode="login">Log in</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-mode="signin">Sign in</button>
+    </div>
+
+    <form class="auth-form" id="loginForm" novalidate>
+      <div class="field">
+        <label for="loginUser">Username</label>
+        <input id="loginUser" type="text" autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="loginPass">Password</label>
+        <input id="loginPass" type="password" autocomplete="current-password">
+      </div>
+      <button class="btn-primary" type="submit">Log in</button>
+      <a class="forgot" href="#" id="forgotLink">Forgot password?</a>
+    </form>
+
+    <form class="auth-form" id="signinForm" novalidate hidden>
+      <div class="field">
+        <label for="signUser">Username</label>
+        <input id="signUser" type="text" autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="signEmail">Gmail</label>
+        <input id="signEmail" type="email" placeholder="yourname@gmail.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="signPass">Password (6+ characters)</label>
+        <input id="signPass" type="password" autocomplete="new-password">
+      </div>
+      <div class="field">
+        <label for="signConfirm">Confirm password</label>
+        <input id="signConfirm" type="password" autocomplete="new-password">
+      </div>
+      <button class="btn-primary" type="submit">Sign in</button>
+    </form>
+
+    <p class="auth-msg" id="authMsg" aria-live="polite"></p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
